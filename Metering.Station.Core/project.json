@@ -1,0 +1,15 @@
+﻿{
+  "version": "1.0.0-*",
+  "dependencies": {
+    "Autofac": "4.3.0"
+  },
+
+  "frameworks": {
+
+    "net461": {
+      "dependencies": {
+        
+      }
+    }
+  }
+}

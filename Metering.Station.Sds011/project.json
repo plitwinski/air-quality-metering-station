@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "Metering.Station.Core": "*",
+    "Autofac": "4.3.0"
+  },
+  "frameworks": {
+
+    "net461": {
+      "dependencies": {
+        
+      }
+    }
+  },
+  "version": "1.0.0-*"
+}

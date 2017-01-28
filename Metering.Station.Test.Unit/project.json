@@ -1,0 +1,17 @@
+﻿{
+  "dependencies": {
+    "Metering.Station.Core": "*",
+    "NUnit": "3.6.0",
+    "NUnit.Runners": "3.6.0",
+    "Moq": "4.5.30"
+  },
+  "frameworks": {
+    "net461": {
+      "dependencies": {
+        
+      }
+    }
+  },
+
+  "version": "1.0.0-*"
+}

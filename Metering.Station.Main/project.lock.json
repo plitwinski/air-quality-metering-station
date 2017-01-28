@@ -1,0 +1,79 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "Autofac/4.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "Metering.Station.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Autofac": "4.3.0"
+        },
+        "compile": {
+          "net461/Metering.Station.Core.dll": {}
+        },
+        "runtime": {
+          "net461/Metering.Station.Core.dll": {}
+        }
+      },
+      "Metering.Station.Sds011/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Autofac": "4.3.0",
+          "Metering.Station.Core": "1.0.0"
+        },
+        "compile": {
+          "net461/Metering.Station.Sds011.dll": {}
+        },
+        "runtime": {
+          "net461/Metering.Station.Sds011.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/4.3.0": {
+      "sha512": "fCrt0EBW99+q1R6iA3+JBYmtfCDYfMHzsAtaDZ8/kbq9tW+Ze5W8SrxwTHqpbPI4Cp4/0NeJDaODD+D3cOfdHQ==",
+      "type": "package",
+      "path": "Autofac/4.3.0",
+      "files": [
+        "Autofac.4.3.0.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Metering.Station.Core/1.0.0": {
+      "type": "project",
+      "path": "../Metering.Station.Core/project.json",
+      "msbuildProject": "../Metering.Station.Core/Metering.Station.Core.xproj"
+    },
+    "Metering.Station.Sds011/1.0.0": {
+      "type": "project",
+      "path": "../Metering.Station.Sds011/project.json",
+      "msbuildProject": "../Metering.Station.Sds011/Metering.Station.Sds011.xproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Autofac >= 4.3.0",
+      "Metering.Station.Core",
+      "Metering.Station.Sds011"
+    ],
+    ".NETFramework,Version=v4.6.1": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}

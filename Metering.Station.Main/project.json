@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "Metering.Station.Core": "*",
+    "Metering.Station.Sds011": "*",
+    "Autofac": "4.3.0"
+  },
+
+  "frameworks": {
+
+    "net461": {
+      "dependencies": {
+        
+      }
+    }
+  }
+}

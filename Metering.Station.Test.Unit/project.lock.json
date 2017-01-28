@@ -1,0 +1,271 @@
+{
+  "locked": false,
+  "version": 2,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "Autofac/4.3.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Autofac.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Autofac.dll": {}
+        }
+      },
+      "Castle.Core/3.3.3": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Castle.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Castle.Core.dll": {}
+        }
+      },
+      "Moq/4.5.30": {
+        "type": "package",
+        "dependencies": {
+          "Castle.Core": "3.3.3"
+        },
+        "compile": {
+          "lib/net45/Moq.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Moq.dll": {}
+        }
+      },
+      "NUnit/3.6.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/nunit.framework.dll": {}
+        },
+        "runtime": {
+          "lib/net45/nunit.framework.dll": {}
+        }
+      },
+      "NUnit.ConsoleRunner/3.6.0": {
+        "type": "package"
+      },
+      "NUnit.Extension.NUnitProjectLoader/3.5.0": {
+        "type": "package"
+      },
+      "NUnit.Extension.NUnitV2Driver/3.6.0": {
+        "type": "package"
+      },
+      "NUnit.Extension.NUnitV2ResultWriter/3.5.0": {
+        "type": "package"
+      },
+      "NUnit.Extension.TeamCityEventListener/1.0.2": {
+        "type": "package"
+      },
+      "NUnit.Extension.VSProjectLoader/3.5.0": {
+        "type": "package"
+      },
+      "NUnit.Runners/3.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NUnit.ConsoleRunner": "3.6.0",
+          "NUnit.Extension.NUnitProjectLoader": "3.5.0",
+          "NUnit.Extension.NUnitV2Driver": "3.6.0",
+          "NUnit.Extension.NUnitV2ResultWriter": "3.5.0",
+          "NUnit.Extension.TeamCityEventListener": "1.0.2",
+          "NUnit.Extension.VSProjectLoader": "3.5.0"
+        }
+      },
+      "Metering.Station.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.6.1",
+        "dependencies": {
+          "Autofac": "4.3.0"
+        },
+        "compile": {
+          "net461/Metering.Station.Core.dll": {}
+        },
+        "runtime": {
+          "net461/Metering.Station.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Autofac/4.3.0": {
+      "sha512": "fCrt0EBW99+q1R6iA3+JBYmtfCDYfMHzsAtaDZ8/kbq9tW+Ze5W8SrxwTHqpbPI4Cp4/0NeJDaODD+D3cOfdHQ==",
+      "type": "package",
+      "path": "Autofac/4.3.0",
+      "files": [
+        "Autofac.4.3.0.nupkg.sha512",
+        "Autofac.nuspec",
+        "lib/net45/Autofac.dll",
+        "lib/net45/Autofac.xml",
+        "lib/netstandard1.1/Autofac.dll",
+        "lib/netstandard1.1/Autofac.xml"
+      ]
+    },
+    "Castle.Core/3.3.3": {
+      "sha512": "tvVrLbHhtAGubUUDbEkH9JlivdlJOTI25u3hlyHpPxuJdTVi/yVQKWCYvGpafGPm7G1ibdWj4brqhtSQkAmN+g==",
+      "type": "package",
+      "path": "Castle.Core/3.3.3",
+      "files": [
+        "ASL - Apache Software Foundation License.txt",
+        "BreakingChanges.txt",
+        "Castle.Core.3.3.3.nupkg.sha512",
+        "Castle.Core.nuspec",
+        "Changes.txt",
+        "License.txt",
+        "lib/net35/Castle.Core.dll",
+        "lib/net35/Castle.Core.xml",
+        "lib/net40-client/Castle.Core.dll",
+        "lib/net40-client/Castle.Core.xml",
+        "lib/net45/Castle.Core.dll",
+        "lib/net45/Castle.Core.xml",
+        "lib/sl4/Castle.Core.dll",
+        "lib/sl4/Castle.Core.xml",
+        "lib/sl5/Castle.Core.dll",
+        "lib/sl5/Castle.Core.xml",
+        "readme.txt"
+      ]
+    },
+    "Moq/4.5.30": {
+      "sha512": "+PsSIGUQmEqgS9JJ87lRJXExkR2sTSGC3Rg6v/gJ4zObsI+AaGLxvHvG/oeUnS4zZW6gMw9wCDA4w0Jf+qo+vA==",
+      "type": "package",
+      "path": "Moq/4.5.30",
+      "files": [
+        "Moq.4.5.30.nupkg.sha512",
+        "Moq.nuspec",
+        "lib/net45/Moq.dll",
+        "lib/net45/Moq.xml"
+      ]
+    },
+    "NUnit/3.6.0": {
+      "sha512": "mqJP3DI3mE9YSx0o7R5loyIm0NnLJLSl2lmXn84gSkOmLWzlbrxS0oW/cCZF25tB+6Anday/mbkRUXmdvEvSCg==",
+      "type": "package",
+      "path": "NUnit/3.6.0",
+      "files": [
+        "CHANGES.txt",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "NUnit.3.6.0.nupkg.sha512",
+        "NUnit.nuspec",
+        "lib/MonoAndroid/nunit.framework.dll",
+        "lib/MonoAndroid/nunit.framework.xml",
+        "lib/Xamarin.iOS10/nunit.framework.dll",
+        "lib/Xamarin.iOS10/nunit.framework.xml",
+        "lib/net20/NUnit.System.Linq.dll",
+        "lib/net20/nunit.framework.dll",
+        "lib/net20/nunit.framework.xml",
+        "lib/net35/nunit.framework.dll",
+        "lib/net35/nunit.framework.xml",
+        "lib/net40/nunit.framework.dll",
+        "lib/net40/nunit.framework.xml",
+        "lib/net45/nunit.framework.dll",
+        "lib/net45/nunit.framework.xml",
+        "lib/netstandard1.6/nunit.framework.dll",
+        "lib/netstandard1.6/nunit.framework.xml",
+        "lib/portable-net45+win8+wp8+wpa81/nunit.framework.dll",
+        "lib/portable-net45+win8+wp8+wpa81/nunit.framework.xml"
+      ]
+    },
+    "NUnit.ConsoleRunner/3.6.0": {
+      "sha512": "72jlX98JoBfWBZWgPieC4Z2cFIjV4yK5fJJAVpI+Sp7DspFJKBcilE4PfyrMusHqBH3AqVJvBBsbn5BYosJT9g==",
+      "type": "package",
+      "path": "NUnit.ConsoleRunner/3.6.0",
+      "files": [
+        "CHANGES.txt",
+        "LICENSE.txt",
+        "NOTICES.txt",
+        "NUnit.ConsoleRunner.3.6.0.nupkg.sha512",
+        "NUnit.ConsoleRunner.nuspec",
+        "tools/Mono.Cecil.dll",
+        "tools/nunit-agent-x86.exe",
+        "tools/nunit-agent-x86.exe.config",
+        "tools/nunit-agent.exe",
+        "tools/nunit-agent.exe.config",
+        "tools/nunit.engine.api.dll",
+        "tools/nunit.engine.api.xml",
+        "tools/nunit.engine.dll",
+        "tools/nunit.nuget.addins",
+        "tools/nunit3-console.exe",
+        "tools/nunit3-console.exe.config"
+      ]
+    },
+    "NUnit.Extension.NUnitProjectLoader/3.5.0": {
+      "sha512": "oe+PYd5uf0u3WoV6txz6esPe5I9I3PV0o96KoEVvJs+AYMG9MCebmnMq7N8dYJrWiDKIuSDwZ6WTs84XTDZ/Pw==",
+      "type": "package",
+      "path": "NUnit.Extension.NUnitProjectLoader/3.5.0",
+      "files": [
+        "NUnit.Extension.NUnitProjectLoader.3.5.0.nupkg.sha512",
+        "NUnit.Extension.NUnitProjectLoader.nuspec",
+        "tools/nunit-project-loader.dll"
+      ]
+    },
+    "NUnit.Extension.NUnitV2Driver/3.6.0": {
+      "sha512": "TZIWwZaND/91p9FCuZH0vJLNPVyFV4No6XHgtd2ZLwN6MQZVPWdI4apL38ejsKAFn3nF1yTlvJgYF1l2mlo8wA==",
+      "type": "package",
+      "path": "NUnit.Extension.NUnitV2Driver/3.6.0",
+      "files": [
+        "LICENSE.txt",
+        "NUnit.Extension.NUnitV2Driver.3.6.0.nupkg.sha512",
+        "NUnit.Extension.NUnitV2Driver.nuspec",
+        "tools/nunit.core.dll",
+        "tools/nunit.core.interfaces.dll",
+        "tools/nunit.v2.driver.addins",
+        "tools/nunit.v2.driver.dll"
+      ]
+    },
+    "NUnit.Extension.NUnitV2ResultWriter/3.5.0": {
+      "sha512": "qz5Xxd+yBStdMP/jIIFz01cN3x8rKBCoF3alFHa5Gr+lZqdFyV1DN+3l8AlHrDSX5OzAz+T5CCBkgDim/hqGkQ==",
+      "type": "package",
+      "path": "NUnit.Extension.NUnitV2ResultWriter/3.5.0",
+      "files": [
+        "NUnit.Extension.NUnitV2ResultWriter.3.5.0.nupkg.sha512",
+        "NUnit.Extension.NUnitV2ResultWriter.nuspec",
+        "tools/nunit-v2-result-writer.dll"
+      ]
+    },
+    "NUnit.Extension.TeamCityEventListener/1.0.2": {
+      "sha512": "VWtqluuxC1VizTdD/GcdppF1AJGa0sGIGwRKpo8cuAC9Hcw5X4znraTLyVc62Wqj/+C9VwTZ4FI88GZHexYPNg==",
+      "type": "package",
+      "path": "NUnit.Extension.TeamCityEventListener/1.0.2",
+      "files": [
+        "LICENSE.txt",
+        "NUnit.Extension.TeamCityEventListener.1.0.2.nupkg.sha512",
+        "NUnit.Extension.TeamCityEventListener.nuspec",
+        "tools/teamcity-event-listener.dll"
+      ]
+    },
+    "NUnit.Extension.VSProjectLoader/3.5.0": {
+      "sha512": "JbWSqy3Kh2EkzaHd0GDh3jfdzOf6w3v5h3UbKnR9yUJix9XjucZbFmQuj9DYsvpzVKrWGtvQLLrWZYOo6uBGrw==",
+      "type": "package",
+      "path": "NUnit.Extension.VSProjectLoader/3.5.0",
+      "files": [
+        "NUnit.Extension.VSProjectLoader.3.5.0.nupkg.sha512",
+        "NUnit.Extension.VSProjectLoader.nuspec",
+        "tools/vs-project-loader.dll"
+      ]
+    },
+    "NUnit.Runners/3.6.0": {
+      "sha512": "fmjlDFtF5X0FacZDfiGW5tWIzLbFDuI0XKo/nl/jvAPCTJ0bUD3ORJwvdZTxeu/n8Rl8DYBm29OHWs8+RxUE2w==",
+      "type": "package",
+      "path": "NUnit.Runners/3.6.0",
+      "files": [
+        "NUnit.Runners.3.6.0.nupkg.sha512",
+        "NUnit.Runners.nuspec"
+      ]
+    },
+    "Metering.Station.Core/1.0.0": {
+      "type": "project",
+      "path": "../Metering.Station.Core/project.json",
+      "msbuildProject": "../Metering.Station.Core/Metering.Station.Core.xproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "": [
+      "Metering.Station.Core",
+      "Moq >= 4.5.30",
+      "NUnit >= 3.6.0",
+      "NUnit.Runners >= 3.6.0"
+    ],
+    ".NETFramework,Version=v4.6.1": []
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
+}
