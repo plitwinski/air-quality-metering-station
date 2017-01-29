@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Metering.Station.Core.Devices;
+using log4net;
 
 namespace Metering.Station.Core
 {
     public class AirQualityMeter : IAirQualityMeter
     {
+        private readonly ILog _logger = LogManager.GetLogger(nameof(AirQualityMeter));
+
         private readonly List<IAirQualitySensor> _sensors;
         public bool IsCollectingReadings { get; private set; }
         public IReadOnlyDictionary<string, AirQualityReading> RecentAirQualityReadings { get; private set; }
@@ -40,6 +43,8 @@ namespace Metering.Station.Core
                 IsCollectingReadings = true;
             }
 
+            _logger.Info($"Starting data collection...");
+
             _sensors.ForEach(async p => await p.StartAsync(NewReadingArrived(p.DeviceName)));
 
             ClearStoredReadings();
@@ -51,6 +56,9 @@ namespace Metering.Station.Core
             RecentAirQualityReadings = GetRecentReadings();
 
             _sensors.ForEach(async p => await p.StopAsync());
+            _logger.Info($"Data collection finished - recent reading:");
+            foreach (var reading in RecentAirQualityReadings)
+                _logger.Info($"Device: {reading.Key}, PM2.5: {reading.Value.PM25}, PM10 {reading.Value.PM10}, Date: {DateTime.Now}");
 
             lock (syncObj)
             {

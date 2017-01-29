@@ -1,5 +1,7 @@
 ﻿using Autofac;
 using Metering.Station.Core;
+using Metering.Station.Main.Background;
+using Metering.Station.Main.Configuration;
 using Metering.Station.Sds011;
 
 namespace Metering.Station.Main.IoC
@@ -11,6 +13,8 @@ namespace Metering.Station.Main.IoC
             var settings = GetMeteringStationSettings();
             var builder = new ContainerBuilder();
             builder.Register(_ => settings).As<IMeteringStationSettings>().SingleInstance();
+            builder.RegisterModule<MainModule>();
+            builder.RegisterModule<QuartzModule>();
             builder.RegisterModule<CoreModule>();
             builder.RegisterModule(new Sds011Module(settings));
             return builder.Build();
@@ -18,8 +22,7 @@ namespace Metering.Station.Main.IoC
 
         private static IMeteringStationSettings GetMeteringStationSettings()
         {
-            //TODO read real configs
-            return new MeteringStationSettings();
+            return MeteringStationSettings.Build();
         }
     }
 }

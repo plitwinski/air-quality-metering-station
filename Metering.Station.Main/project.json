@@ -1,21 +1,34 @@
 ﻿{
-  "version": "1.0.0-*",
   "buildOptions": {
-    "emitEntryPoint": true
+    "emitEntryPoint": true,
+    "copyToOutput": [
+      "appsettings.json",
+      "log4net.config"
+    ]
   },
-
   "dependencies": {
+    "Autofac": "4.3.0",
+    "log4net": "2.0.7",
+    "Metering.Station.Api": "*",
     "Metering.Station.Core": "*",
     "Metering.Station.Sds011": "*",
-    "Autofac": "4.3.0"
+    "Microsoft.Extensions.Configuration": "1.0.0",
+    "Microsoft.Extensions.Configuration.Binder": "1.0.0",
+    "Microsoft.Extensions.Configuration.FileExtensions": "1.0.0",
+    "Microsoft.Extensions.Configuration.Json": "1.0.0",
+    "Quartz": "2.4.1"
   },
-
   "frameworks": {
 
     "net461": {
+      "frameworkAssemblies": {
+        "System.Xml": "4.0.0.0"
+      },
       "dependencies": {
-        
+        "Topshelf.Autofac": "3.1.0",
+        "Topshelf.Log4Net": "4.0.1",
       }
     }
-  }
+  },
+  "version": "1.0.0-*"
 }

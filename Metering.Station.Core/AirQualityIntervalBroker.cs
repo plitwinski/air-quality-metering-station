@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Metering.Station.Core
 {
@@ -9,12 +6,12 @@ namespace Metering.Station.Core
     {
         public Task PauseToStabilizeReadings()
         {
-            return Task.Delay(60000);
+            return Task.Delay(10000);
         }
 
         public Task PauseToGatherReadings()
         {
-            return Task.Delay(60000);
+            return Task.Delay(10000);
         }
     }
 }

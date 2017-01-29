@@ -1,0 +1,20 @@
+﻿{
+  "version": "1.0.0-*",
+  "dependencies": {
+    "Autofac": "4.3.0",
+    "Metering.Station.Core": "*",
+    "Nancy": "1.4.3",
+    "Nancy.Bootstrappers.Autofac": "1.4.1",
+    "Nancy.Hosting.Self": "1.4.1",
+    "Nancy.Owin": "1.4.1"
+  },
+
+  "frameworks": {
+
+    "net461": {
+      "dependencies": {
+
+      }
+    }
+  }
+}

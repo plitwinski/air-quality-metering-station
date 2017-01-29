@@ -10,7 +10,7 @@ namespace Metering.Station.Main.IoC
     {
         protected override void Load(ContainerBuilder builder)
         {
-            
+            builder.RegisterType<MeteringStationMainService>().AsSelf();
         }
     }
 }
